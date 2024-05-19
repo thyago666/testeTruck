@@ -14,6 +14,7 @@ O projeto tem como objetivo dar suporte a equipe de nutricionistas da empresa Fi
 ### Pré-requisitos
 
 - XAMPP
+- Composer
 
 ### Passos para Instalação e Uso da API
 
