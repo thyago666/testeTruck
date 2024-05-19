@@ -17,35 +17,42 @@ O projeto tem como objetivo dar suporte a equipe de nutricionistas da empresa Fi
 
 ### Passos para Instalação e Uso da API
 
-1. Clone o repositório: https://github.com/thyago666/truckpag.git
+1. Clone o repositório: "https://github.com/thyago666/truckpag.git" na pasta (c:\xampp\htdocs\pasta)
 
 2. Abrir o projeto com o visual Studio code ou alguma IDE de sua preferencia
 
-3. Configurar o .env do projeto com as senhas do seu banco de dados Mysql
-    DB_DATABASE=testetruck
-    DB_USERNAME=
-    DB_PASSWORD=
+3. Criar o .env e copiar o conteudo do env.example e informar as senhas do seu banco de dados Mysql
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=testetruck
+DB_USERNAME=
+DB_PASSWORD=
 
-4. Executar o xampp e startar o apache e o Mysql.  
+4. Acessar o terminal do VSCode e digitar o comando "composer install" (se der erros de avisos, acessar o php.ini do xampp e habilitar a opcao extension=zip)
 
-5. executar o comando "php artisan migrate" no terminal do VS Code e responder yes para criar o banco no Mysql.
+5. Pelo terminal do VScode dar o comando "php artisan key:generate"
 
-6. Executar o comando PHP artisan serve no terminal do VS Code.
+6. Executar o xampp e startar o apache e o Mysql.  
 
-7. Abrir o postman e importar a collection dos endpoints (pasta postman dentro do projeto 'Truck.postman_collection.json')
+7. executar o comando "php artisan migrate" no terminal do VS Code e responder yes para criar o banco no Mysql.
 
-8. Executar o primeiro endpoint pelo postman mehotd[GET] - http://localhost:8000/cron
+8. Executar o comando "PHP artisan serve" no terminal do VS Code.
 
-9. Execuntar o segundo pelo postman method[GET] http://localhost:8000/token
+9. Abrir o postman e criar uma collection (botão new) e importar a collection dos endpoints (pasta postman dentro do projeto 'Truck.postman_collection.json')
+
+10. Executar o primeiro endpoint pelo postman mehotd[GET] - http://localhost:8000/cron
+
+11. Executar o segundo pelo postman method[GET] http://localhost:8000/token
     Vai ser retornado um token, copiar esse token e colar no headers dos metodos PUT e DELETE
 
-10. Executar o endpoint pelo postman method[GET] http://localhost:8000/products?page=1  
+12. Executar o endpoint pelo postman method[GET] http://localhost:8000/products?page=1  
 
-11. Executar o endpont pelo postman method[DELETE] http://localhost:8000/products/8718215063506 (o codigo do produto fica ao seu critério)
+13. Executar o endpont pelo postman method[DELETE] http://localhost:8000/products/8718215063506 (o codigo do produto fica ao seu critério)
 
-12. Executar o endpoint pelo postman method[PUT] http://localhost:8000/products/8718215090281 (o codigo do produto fica ao seu critério) 
+14. Executar o endpoint pelo postman method[PUT] http://localhost:8000/products/8718215090281 (o codigo do produto fica ao seu critério) 
 
-13. Executar o endpoint pelo postman method[GET] http://localhost:8000/products/8718215063506 (o codigo do produto fica ao seu critério) 
+15. Executar o endpoint pelo postman method[GET] http://localhost:8000/products/8718215063506 (o codigo do produto fica ao seu critério) 
 
-14. Executar o endpoint pelo postman method[GET] http://localhost:8000/details
+16. Executar o endpoint pelo postman method[GET] http://localhost:8000/details
 
