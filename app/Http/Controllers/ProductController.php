@@ -9,7 +9,6 @@ use GuzzleHttp\Client;
 use Illuminate\Support\Carbon;
 use App\Repositories\ProductRepository;
 
-
 use Illuminate\Http\Request;
 
 class ProductController extends Controller

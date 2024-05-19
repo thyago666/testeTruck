@@ -8,7 +8,6 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 
-
 class ProductRepository
 {
 

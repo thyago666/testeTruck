@@ -55,4 +55,3 @@ DB_PASSWORD=
 15. Executar o endpoint pelo postman method[GET] http://localhost:8000/products/8718215063506 (o codigo do produto fica ao seu critério) 
 
 16. Executar o endpoint pelo postman method[GET] http://localhost:8000/details
-
